@@ -86,26 +86,27 @@ La etiqueta <a/> es utlizada para especificar un hipervinculo, se coloca dentro 
 type cuyo valor es "text/html", hreflang cuyo valor es "es", charset cuyo valor es "utf-8", rel cuyo valor es "help", y el texto "Resumen HTML" es el que se verá en la pagina como enlace
 No es obligatoria
 
-2f) <table width="200" summary="Datos correspondientes al ejercicio vencido">
-<caption align="top"> Título </caption>
-<tr>
-<th scope="col">&nbsp;</th>
-<th scope="col">A</th>
-<th scope="col">B</th>
-<th scope="col">C</th>
-</tr>
-<tr>
-<th scope="row">1º</th>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<th scope="row">2º</th>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
+2f) 
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+    <caption align="top"> Título </caption>
+    <tr>
+        <th scope="col">&nbsp;</th>
+        <th scope="col">A</th>
+        <th scope="col">B</th>
+        <th scope="col">C</th>
+    </tr>
+    <tr>
+        <th scope="row">1º</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <th scope="row">2º</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
 </table>
 
 En este caso nos encontramos con las etiquetas <table/>, <caption/>, <tr/>, <th/> y <td/>. Estas son utilizadas dentro del body
@@ -116,12 +117,15 @@ No son obligatorias
 
 # Ejercitación 3 -En cada caso, explicar las diferencias entre los segmentos de código y sus visualizaciones:
 
-3a) <a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+3a) 
+```html 
+a href="http://www.google.com.ar">Click aquí para ir a Google</a>
 <a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
 <a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
 <a href="#">Click aquí para ir a Google</a>
 <a href="#arriba">Click aquí para volver arriba</a>
 <a name="arriba" id="arriba"></a>
+```
 
 En el primer código que utiliza la etiqueta <a/> nos lleva a la pagina "http://www.google.com.ar" en una nueva pestaña, el segundo nos lleva a la misma pagina pero en la misma pestaña que nos encontrabamos.En el tercer segmento al no tener ningun texto entre la aperturra y cerradura de esta, no podremos observar el enlace en la página
 En el cuarto segmento de código, al no haber un href que nos indique a que parte de la página ir, al hacer click en el enlace no nos iremos hacia ninguna otra página o moveremos dentro de la misma página
