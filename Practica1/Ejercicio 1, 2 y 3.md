@@ -125,9 +125,9 @@ No es obligatoria
 </table>
 ```
 
-En este caso nos encontramos con las etiquetas <table/>, <caption/>, <tr/>, <th/> y <td/>. Estas son utilizadas dentro del body
-La etiqueta <table/> es utilizada para indicar que se esta creando una tabla, la etiqueta <caption/> le da el titulo a la tabla, <tr/> es utlizada para indicar en comienzo de una fila de la tabla, <th/> se utiliza para marcar la primera fila de una tabla, mientras que <td/> es para indicar las celdas de la misma.
-Dentro de la etiqueta <table/> encontramos los atributos: width="200" summary="Datos correspondientes al ejercicio vencido", dentro de la estiqueta <th/> encontramos el atributo scope que toma los valores de "col"o de "row"
+En este caso nos encontramos con las etiquetas `<table/>`, `<caption/>`, `<tr/>`, `<th/>` y `<td/>`. Estas son utilizadas dentro del body
+La etiqueta `<table/>` es utilizada para indicar que se esta creando una tabla, la etiqueta <caption/> le da el titulo a la tabla, `<tr/>` es utlizada para indicar en comienzo de una fila de la tabla, `<th/>` se utiliza para marcar la primera fila de una tabla, mientras que <td/> es para indicar las celdas de la misma.
+Dentro de la etiqueta `<table/>` encontramos los atributos: width="200" summary="Datos correspondientes al ejercicio vencido", dentro de la estiqueta `<th/>` encontramos el atributo scope que toma los valores de "col"o de "row"
 No son obligatorias
 
 
@@ -144,9 +144,9 @@ a href="http://www.google.com.ar">Click aquí para ir a Google</a>
 <a name="arriba" id="arriba"></a>
 ```
 
-En el primer código que utiliza la etiqueta <a/> nos lleva a la pagina "http://www.google.com.ar" en una nueva pestaña, el segundo nos lleva a la misma pagina pero en la misma pestaña que nos encontrabamos.En el tercer segmento al no tener ningun texto entre la aperturra y cerradura de esta, no podremos observar el enlace en la página
+En el primer código que utiliza la etiqueta `<a/>` nos lleva a la pagina "http://www.google.com.ar" en una nueva pestaña, el segundo nos lleva a la misma pagina pero en la misma pestaña que nos encontrabamos.En el tercer segmento al no tener ningun texto entre la aperturra y cerradura de esta, no podremos observar el enlace en la página
 En el cuarto segmento de código, al no haber un href que nos indique a que parte de la página ir, al hacer click en el enlace no nos iremos hacia ninguna otra página o moveremos dentro de la misma página
-Ahora bien, el quinto y sexto segmento se complementan ya que el href="#arriba" nos llevara a la parte de la pagina donde haya una etiqueta con el id="arriba", que en este caso tambien es una etiqueta <a/>
+Ahora bien, el quinto y sexto segmento se complementan ya que el href="#arriba" nos llevara a la parte de la pagina donde haya una etiqueta con el id="arriba", que en este caso tambien es una etiqueta `<a/>`
 
 ## 3b)
 
@@ -169,8 +169,9 @@ Ahora bien, el quinto y sexto segmento se complementan ya que el href="#arriba" 
 
 
 ## 3d)
-La diferencia entre estos dos códigos no es algo visual, ya que ambos se ven exactamente igual en una página, sino que la diferencia cae en que la etiqueta <th/> de por si pone el texto en negrita y lo ubica en el centro.
-Esto nos permite escribir menos etiquetas como la de <strong/> y <div/> y codigo CSS como el v align="center">
+La diferencia entre estos dos códigos no es algo visual, ya que ambos se ven exactamente igual en una página, sino que la diferencia cae en que la etiqueta `<th/>` de por si pone el texto en negrita y lo ubica en el centro.
+Esto nos permite escribir menos etiquetas como la de `<strong/>` y `<div/>` y codigo CSS como el v align="center">
 
-## 3f) Este caso es similar al enterior, los dos codigos no se distinguen visualmente en la página pero como se puede observar el primer código es mas acotado, ya que la etiqueta <caption/> nos evita tener que agregar en códgio CSS 
+## 3f) 
+Este caso es similar al enterior, los dos codigos no se distinguen visualmente en la página pero como se puede observar el primer código es mas acotado, ya que la etiqueta <caption/> nos evita tener que agregar en códgio CSS 
 
