@@ -52,7 +52,7 @@ Para indicar este dato en el HTML se utiliza la etiqueta 'meta' , la cual debe e
 </head> 
 ```
 
-# Ejercitación 2 - Responder el siguiente cuestionario
+# Ejercitación 2 - Analizar los siguientes segmentos de código indicando en qué sección del documento HTML  se colocan, cuál es el efecto que producen y señalar cada uno de los elementos, etiquetas, y atributos (nombre y valor), aclarando si es obligatorio.
 
 ## 2a)
 ```html
@@ -150,28 +150,397 @@ Ahora bien, el quinto y sexto segmento se complementan ya que el href="#arriba" 
 
 ## 3b)
 
+```html
+<p>
+    <img src="im1.jpg" alt="imagen1" />    
+    <a href="http://www.google.com.ar">Click aquí</a>
+</p>
+
+<br>
+
+<p>
+    <a href="http://www.google.com.ar">
+        <img src="im1.jpg" alt="imagen1" />
+    </a> 
+    Click aquí
+<p>
+
+<br>
+
+<p>
+    <a href="http://www.google.com.ar">
+        <img src="im1.jpg" alt="imagen1" />
+        Click aquí
+    </a>
+</p>
+
+<br>
 
 
+<p>
+    <a href="http://www.google.com.ar">
+        <img src="im1.jpg" alt="imagen1" />
+    </a> 
+    <a href="http://www.google.com.ar">Click aquí</a>
+</p>
+```
+
+En el primer caso veremos una imágen y a su lado un enlace que al hacerle click nos enviará a la página "http://www.google.com.ar"
+En en segundo caso vemremos una imágen con un enlace a Google seguido de un texto sin enlace, la etiqueta de imagen está dentro de la etiqueta de enlace pero el texto está fuera
+En el tercer caso una imágen y el texto "Click aquí", donde ambos nos enviaran a Google,ya que ambos estan dentro de la etiueta del enlace
+En el ultimo caso tambien tendremos una imágen y un texto que nos enviaran a lapágina de Google, pero estos enlnaces estan separados, ya que se estan utilizando dos etiquetas `<a>`
+
+<br><br>
+        
+## 3c)
+```html
+<ul>
+    <li>xxx</li>
+    <li>yyy</li>
+    <li>zzz</li>
+</ul>
 
 
+<br>
 
 
+<ol>
+    <li>xxx</li>
+    <li>yyy</li>
+    <li>zzz</li>
+</ol>
+
+ 
+<br>
+
+<ol>
+    <li>xxx</li>
+</ol>
+<ol>
+    <li value="2">yyy</li>
+</ol>
+<ol>
+    <li value="3">zzz</li>
+</ol>
+
+<br>
 
 
+<blockquote>
+    <p>
+        1. xxx <br/>
+        2. yyy <br/>
+        3. zzz
+    </p>
+</blockquote>
+```
+<br><br> 
 
-
-
-
-
-
-
-
-
+En el primer caso veremos una lista no ordenada.
+En el segundo caso una lista ordenada
+En el tercercer caso, veremos lo mismo que en el segundo, la diferencia es que se estan utilizando 3 listas ordenadas distintas, cambiando el valor del número que apareceá pevio al tetxo
+El último caso es una cita en bloque. se visualizará algo similar a una lista orenada pero en realidad solo es texto.
 
 ## 3d)
+
+```html
+<table border="1" width="300">
+    <tr>
+        <th>Columna 1</th>
+        <th>Columna 2</th>
+    </tr>
+    <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+    </tr>
+    <tr>
+        <td>Celda 3</td>
+        <td>Celda 4</td>
+    </tr>
+</table>
+
+<br>
+
+<table border="1" width="300">
+    <tr>
+        <td>
+            <div align="center">
+                <strong>Columna1</strong>
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                <strong>Columna2</strong>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+    </tr>
+    <tr>
+        <td>Celda 3</td>
+        <td>Celda 4</td>
+    </tr>
+</table>
+```
 La diferencia entre estos dos códigos no es algo visual, ya que ambos se ven exactamente igual en una página, sino que la diferencia cae en que la etiqueta `<th/>` de por si pone el texto en negrita y lo ubica en el centro.
 Esto nos permite escribir menos etiquetas como la de `<strong/>` y `<div/>` y codigo CSS como el v align="center">
 
+<br><br>
+
+## 3e)
+```html
+<table width="200">
+    <caption>Título</caption>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+
+<br>
+
+<table width="200">
+<tr>
+    <td colspan="3">
+        <div align="center">Título</div>
+    </td>
+</tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+```
+
+Ambas tablas se verán igual, la diferencia es que en la primera se está utilizando la etiqueta `<caption>` para el título mientras que en la segunda se quiere imitar esto utlizando un div con la propiedad align="center"
+
+<br><br>
+
+
 ## 3f) 
+```html
+<table width="200">
+    <tr>
+        <td colspan="3">
+            <div align="center">Título</div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+
+
+<br>
+
+<table width="200">
+    <tr>
+        <td colspan="3">
+            <div align="center">Título</div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+```
+
 Este caso es similar al enterior, los dos codigos no se distinguen visualmente en la página pero como se puede observar el primer código es mas acotado, ya que la etiqueta <caption/> nos evita tener que agregar en códgio CSS 
+<br><br>
+
+## 3g)
+
+```html
+<table width="200" border="1">
+    <tr>
+        <td colspan="3">
+            <div align="center">Título</div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"rowspan="2">&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="50%">&nbsp;</td>
+    </tr>
+</table>
+```
+
+<br>
+
+```html
+<table width="200" border="1" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="2">
+            <div align="center">Título</div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2">&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="50%">&nbsp;</td>
+    </tr>
+</table>
+```
+Ambas son tablas de tres filas con la primera haciendo de titulo y las 2 celdas de la primera columnas juntas en una. La unica diferencia visual es que la primera tabla tiene bordes separados y la segunda tiene bordes unidos usando los atributos de tabla cellpading=0 y cellspacing=0
+
+<br><br>
+
+## 3h)
+
+```html
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+<fieldset>
+    <legend>LOGIN</legend>
+    Usuario: <input type="text" id="usu1" name="usu1" value="xxx" />
+    <br/>
+    Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+</fieldset>
+<input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+
+<br>
+
+<form id="form2" name="form2" action="" method="get" target="_blank">
+    LOGIN <br/>
+    <label>Usuario: 
+        <input type="text" id="usu2" name="usu2"/>
+    </label>
+    <br/>
+    <label>
+        Clave: 
+        <input type="text" id="clave2" name="clave2" />
+    </label>
+    <br/>
+    <input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+
+<br>
+
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="post" target="_blank">
+    <fieldset>
+        <legend>LOGIN</legend>
+        Usuario: <input type="text" id="usu3" name="usu3" /> <br/>
+        Clave: <input type="password" id="clave3" name="clave3" />
+    </fieldset>
+    <input type="reset" id="boton3" name="boton3" value="Enviar"/>
+</form>                                                            
+```
+
+El primero es un formulario que tiene dentro de un bloque `<fieldset>`, tiene una leyenda y dos campos usuario y clave ambos con atributo value por lo que se podran ver esos valores predefinidos. Fuera del fieldset hay un boton enviar de tipo submit. El atributo action es "procesar.php" y el method post.
+El segundo codigo es un formulario pero sin bloque `<fieldset>`, tambien tiene una leyenda y dos campos usuario y clave pero sin atributo value por lo cual estaran vacios. Tambien posee un boton enviar. El atributo action del form esta vacio y el metodo es get.
+El ultimo segmento de codigo es un formulario y dentro de un bloque `<fieldset>` al igual que el primero. Las diferencias son que en este form el atributo action es "mailto:xx@xx.com" con method post y enctype="text/plain". En este caso el boton enviar es de tipo reset.
+
+<br><br>
+
+## 3i)
+
+```html
+<label>Botón 1
+    <button type="button" name="boton1" id="boton1">
+        <img src="logo.jpg" alt="Botón con imagen " width="30" height="20"> 
+        <br/>
+        <b>CLICK AQUÍ</b>
+    </button>
+</label>
+
+<br>
+
+<label>Botón 2
+    <input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+</label>
+```
+En el primer caso veremos un botón que incluirá una imagen y un texto que negrita que dice "CLICK AQUÍ".
+En el segundo caso se verá un botón donde dentro diga "CLICK AQUÍ", este texto se lo asigna a traves de la propiedad value
+
+<br><br>
+
+## 3j)
+
+```html
+<p>
+    <label>
+        <input type="radio" name="opcion" id="X" value="X" />
+        X
+    </label>
+    <br/>
+    <label>
+        <input type="radio" name="opcion" id="Y" value="Y" />
+        Y
+    </label>
+</p>
+
+<br>
+<p>
+    <label>
+        <input type="radio" name="opcion1" id="X" value="X" />
+        X
+    </label>
+    <br/>
+    <label>
+        <input type="radio" name="opcion2" id="Y" value="Y" />
+        Y
+    </label>
+</p>
+```
+Se van a ver 4 radio buttons. Los dos primeros X e Y estan en el mismo grupo ya que tienen el mismo nombre como atributo, por esto al seleccionar uno se va a quitar la seleccion del otro. Los otros dos botones estan en diferentes grupos ya que sus atributos de nombre son diferentes y se podran seleccionar los dos a la vez.
+
+## 3k)        
+
+
+```html
+<select name="lista">
+    <optgroup label="Caso 1">
+        <option>Mayo</option>
+        <option>Junio</option>
+    </optgroup>
+    <optgroup label="Caso 2">
+        <option>Mayo</option>
+        <option>Junio</option>
+    </optgroup>
+</select>
+<br>
+<select name="lista[]" multiple="multiple">
+    <optgroup label=" Caso 1">
+        <option>Mayo</option>
+        <option>Junio</option>
+    </optgroup>
+    <optgroup label=" Caso 2">
+        <option>Mayo</option>
+        <option>Junio</option>
+    </optgroup>
+</select>
+```
+La primera es una lista desplegable con dos subcategorias. Solo se puede elegir una opcion. 
+La segunda es una lista igual a la primera pero con la diferencia de que se pueden elegir multiples opciones ya que tiene el atributo multiple="multiple"
+
 
