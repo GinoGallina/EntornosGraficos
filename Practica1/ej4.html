@@ -7,51 +7,58 @@
     <title>Ejercicio4</title>
 </head>
 <body>
-    <a href="https://www.frro.utn.edu.ar/"><img src="https://upload.wikimedia.org/wikipedia/commons/6/67/UTN_logo.jpg" alt="logo" style="width: 12%;"></a>
-    <hr>
-    <h1>AÑO 2008</h1>
-    <table style="border: 1px solid black; border-collapse: collapse; width: 40%;">
-        <tr>
-            <th style="text-align: right;">Exámenes</th>
-        </tr>
-        <tr>
-            <td rowspan="2" style="border: 1px solid black;">Fecha:.................................... </td>
-            <td style="border: 1px solid black; padding: 10px; text-align: right">Aprobados</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid black; padding: 10px; text-align: right;">24/30</td>
-        </tr>
-    </table>
-    <ol>
-        <li><a href="#enunciado">Enunciado al exmen</a></li>
-        <li><a href="file:///C:/Users/aleco/OneDrive/Escritorio/EntornosGraficos/html/EntornosGraficos/Practica1/ej4.html" target="_blank">Resolucion</a></li>
-    </ol>
-    <label for="">Puede realizar consultas completando siguiente fromulario: </label>
-    <form action="" style="display:flex; flex-direction: column;">
-        <div >
-            <label for="email" style="margin-right: 15px; text-align: right;"><strong>email: </strong></label>
-            <input type="email" name="" id="" >
-        </div>
-        <div >
-            <label for="" style="margin-right: 15px; "><strong>consulta: </strong></label>
-            <textarea name="" id="" cols="30" rows="10" ></textarea>
-        </div>
-        <div >
-            <button type="submit"><strong>Enviar</strong></button>
-            <button type="submit"><strong>Borrar</strong></button>
+    <header>
+        <a href="https://www.frro.utn.edu.ar/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/UTN_logo.jpg" alt="logo" style="width: 12%;">    
+        </a>
+        <hr>
+    </header>
+    <main>
+        <h1>AÑO 2023</h1>
+        <table style="border: 1px solid black; border-collapse: collapse; width: 50%;">
+            <tr>
+                <th style="text-align: right;">Exámenes</th>
+            </tr>
+            <tr>
+                <td rowspan="2" style="border: 1px solid black; text-align: center;">Fecha: <time datetime="2023-04-11">11/4/2023</time></td>
+                <td style="border: 1px solid black; padding: 10px; text-align: right">Aprobados</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 10px; text-align: right;">24/30</td>
+            </tr>
+        </table>
+
+        <ol style="margin-bottom: 50px; margin-top: 50px;">
+            <li><a href="#enunciado">Enunciado al exmen</a></li>
+            <li><a href="file:///C:/Users/aleco/OneDrive/Escritorio/EntornosGraficos/html/EntornosGraficos/Practica1/resolucion.html" target="_blank">Resolucion</a></li>
+        </ol>
+
+        <p>Puede realizar consultas completando siguiente fromulario: </p>
+        <form action="mailto:mailto:x@x.com" method="POST" enctype="text/plain" style="position:relative; height: 250px;">
+            <label for="email" style="position: absolute;top: 10px; text-align:right; ;"><strong>email: </strong></label>
+            <input type="email" name="email" id="email" style="position:absolute; left: 75px; top: 10px;" > 
+
+            <label for="" style="position: absolute;top: 45px"><strong>consulta: </strong></label>
+            <textarea name="consulta" id="consulta" cols="30" rows="10" style="position: absolute; top: 45px; left: 75px"></textarea> 
+
+            <button type="submit" style="position: absolute; top: 220px;left: 100px;"><strong>Enviar</strong></button>
+            <button type="reset" style="position: absolute; top: 220px;left: 200px;" ><strong>Borrar</strong></button>
+        </form>
+
+        <h2 id="enunciado">Enunciado del examen</h2>
+        <div>
+            <p>
+                Ejercicio 1......................................
+            </p>
+            <p>
+                Ejercicio 2......................................
+            </p>
         </div>
 
-    </form>
-    <h2 id="enunciado">Enunciado del examen</h2>
-    <div>
-        <p>
-            Ejercicio 1......................................
-        </p>
-        <p>
-            Ejercicio 2......................................
-        </p>
-    </div>
-    <p>Para mas info dirijase a <a href=»mailto:contacto@xx.com»>contacto@xx.com</a></p>
+    </main>
+    <footer>
+        <p>Para más información dirigirsse a <a href="mailto:contacto@xx.com">contacto@xx.com</a></p>
+    </footer>
     
 </body>
 </html>
