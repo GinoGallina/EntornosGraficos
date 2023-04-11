@@ -56,11 +56,10 @@ Para indicar este dato en el HTML se utiliza la etiqueta 'meta' , la cual debe e
 
 ## 2a)
 ```html
-<!-- Código controlado el día 12/08/2009 →
+<!-- Código controlado el día 12/08/2009 -->
 ```
 
 Es utilizado para realizar un comentario, se puede encontrar dentro de la etiqueta head o la etiqueta body
-<!-- es utilizado para abrir el comentario, y el tetxo que le sigue es el comentario propiamente dicho.
 Los comentarios no son obligatorios
 
 ## 2b) 
