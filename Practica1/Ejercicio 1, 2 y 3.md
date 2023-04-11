@@ -54,39 +54,55 @@ Para indicar este dato en el HTML se utiliza la etiqueta 'meta' , la cual debe e
 
 # Ejercitación 2 - Responder el siguiente cuestionario
 
-2a)<!-- Código controlado el día 12/08/2009 →
+## 2a)
+```html
+<!-- Código controlado el día 12/08/2009 →
+```
 
 Es utilizado para realizar un comentario, se puede encontrar dentro de la etiqueta head o la etiqueta body
 <!-- es utilizado para abrir el comentario, y el tetxo que le sigue es el comentario propiamente dicho.
 Los comentarios no son obligatorios
 
-2b) <div id="bloque1">Contenido del bloque1</div>
+## 2b) 
+```html
+<div id="bloque1">Contenido del bloque1</div>
+```
 
 Es un bloque div, se coloca dentro body, el efecto que produce es el de crear un segmento que puede tener contenido, como es ente caso es el texto "Contenido del bloque1".
 Tiene un atributo id cuyo valor es "bloque1".
 No es obligatorio
 
-2c) <img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+## 2c) 
+```html
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+```
 
 <img/> es una etiqueta utlizada para colocar una imagen, se coloca dentro del body y tiene varios atributos como src (en este caso no tiene valor), alt cuyo valor es lugar imagen",
 id cuyo valor es "im1", name cuyo valor es "im1", width cuyo valor es "32", height cuyo valor es "32", longdesc cuyo valor es "detalles.htm".
 No es obligatorio
         
-2d) <meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+## 2d) 
+```html
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
 <meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+```
 
 <meta/> es una etiqueta ulizada para aportar información sobre el documento ,se coloca dentro del head
 
 No es obligatoria.
 
-2e) <a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
+## 2e) 
+```html
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
 rel="help">Resumen HTML </a>
+```
 
 La etiqueta <a/> es utlizada para especificar un hipervinculo, se coloca dentro el body, tiene varios atributos como href donde se indica la direccion a la cual se quiere acceder, en este caso http://www.e-style.com.ar/resumen.html, 
 type cuyo valor es "text/html", hreflang cuyo valor es "es", charset cuyo valor es "utf-8", rel cuyo valor es "help", y el texto "Resumen HTML" es el que se verá en la pagina como enlace
 No es obligatoria
 
-2f) 
+## 2f)
+ ```html
 <table width="200" summary="Datos correspondientes al ejercicio vencido">
     <caption align="top"> Título </caption>
     <tr>
@@ -108,6 +124,7 @@ No es obligatoria
         <td>&nbsp;</td>
     </tr>
 </table>
+```
 
 En este caso nos encontramos con las etiquetas <table/>, <caption/>, <tr/>, <th/> y <td/>. Estas son utilizadas dentro del body
 La etiqueta <table/> es utilizada para indicar que se esta creando una tabla, la etiqueta <caption/> le da el titulo a la tabla, <tr/> es utlizada para indicar en comienzo de una fila de la tabla, <th/> se utiliza para marcar la primera fila de una tabla, mientras que <td/> es para indicar las celdas de la misma.
@@ -117,7 +134,8 @@ No son obligatorias
 
 # Ejercitación 3 -En cada caso, explicar las diferencias entre los segmentos de código y sus visualizaciones:
 
-3a) 
+## 3a)
+ 
 ```html 
 a href="http://www.google.com.ar">Click aquí para ir a Google</a>
 <a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
@@ -131,7 +149,7 @@ En el primer código que utiliza la etiqueta <a/> nos lleva a la pagina "http://
 En el cuarto segmento de código, al no haber un href que nos indique a que parte de la página ir, al hacer click en el enlace no nos iremos hacia ninguna otra página o moveremos dentro de la misma página
 Ahora bien, el quinto y sexto segmento se complementan ya que el href="#arriba" nos llevara a la parte de la pagina donde haya una etiqueta con el id="arriba", que en este caso tambien es una etiqueta <a/>
 
-3b)
+## 3b)
 
 
 
@@ -151,9 +169,9 @@ Ahora bien, el quinto y sexto segmento se complementan ya que el href="#arriba" 
 
 
 
-3d)
+## 3d)
 La diferencia entre estos dos códigos no es algo visual, ya que ambos se ven exactamente igual en una página, sino que la diferencia cae en que la etiqueta <th/> de por si pone el texto en negrita y lo ubica en el centro.
 Esto nos permite escribir menos etiquetas como la de <strong/> y <div/> y codigo CSS como el v align="center">
 
-3f) Este caso es similar al enterior, los dos codigos no se distinguen visualmente en la página pero como se puede observar el primer código es mas acotado, ya que la etiqueta <caption/> nos evita tener que agregar en códgio CSS 
+## 3f) Este caso es similar al enterior, los dos codigos no se distinguen visualmente en la página pero como se puede observar el primer código es mas acotado, ya que la etiqueta <caption/> nos evita tener que agregar en códgio CSS 
 
